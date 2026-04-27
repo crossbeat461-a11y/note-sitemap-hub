@@ -3,38 +3,44 @@ import requests
 from datetime import datetime
 import os
 
-# 設定：あなたのnoteのRSS URL
+# 設定：RSS URL（末尾に /rss がついているか再確認）
 RSS_URL = "https://note.com/ktech_devz/rss"
 SITEMAP_FILE = "sitemap.xml"
 
 def get_note_articles():
     try:
-        response = requests.get(RSS_URL)
+        # ユーザーエージェントを設定して拒否を防ぐ
+        headers = {'User-Agent': 'Mozilla/5.0'}
+        response = requests.get(RSS_URL, headers=headers)
+        response.raise_for_status()
+        
         root = ET.fromstring(response.content)
         articles = []
         for item in root.findall(".//item"):
             link = item.find("link").text
-            articles.append(link)
+            if link:
+                articles.append(link)
         return articles
     except Exception as e:
-        print(f"Error fetching RSS: {e}")
+        print(f"RSS取得エラー: {e}")
         return []
 
 def update_sitemap(new_links):
+    # 既存のリンクを保持
     existing_links = set()
-    # ファイルが存在し、かつ中身が空でない場合のみ読み込む
-    if os.path.exists(SITEMAP_FILE) and os.path.getsize(SITEMAP_FILE) > 10:
+    if os.path.exists(SITEMAP_FILE) and os.path.getsize(SITEMAP_FILE) > 0:
         try:
             ns = {"ns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
             tree = ET.parse(SITEMAP_FILE)
-            root = tree.getroot()
-            for loc in root.findall("ns:url/ns:loc", ns):
+            for loc in tree.getroot().findall("ns:url/ns:loc", ns):
                 existing_links.add(loc.text)
-        except Exception as e:
-            print(f"Error reading existing sitemap: {e}")
+        except:
+            pass
 
+    # 全リンクを統合
     all_links = existing_links.union(set(new_links))
-
+    
+    # 【重要】もし記事が0件でも、空のXML構造を必ず作る
     urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
     today = datetime.now().strftime("%Y-%m-%d")
     
@@ -45,14 +51,13 @@ def update_sitemap(new_links):
         lastmod = ET.SubElement(url, "lastmod")
         lastmod.text = today
 
+    # ファイルを書き出す（これで git add が失敗しなくなります）
     tree = ET.ElementTree(urlset)
     ET.indent(tree, space="  ", level=0)
     tree.write(SITEMAP_FILE, encoding="utf-8", xml_declaration=True)
+    print(f"{SITEMAP_FILE} を作成しました。リンク数: {len(all_links)}")
 
 if __name__ == "__main__":
     links = get_note_articles()
-    if links:
-        update_sitemap(links)
-        print(f"Success: Sitemap updated with {len(links)} articles.")
-    else:
-        print("No articles found or error occurred.")
+    # 取得できなくても、空のサイトマップを作るために実行する
+    update_sitemap(links)
