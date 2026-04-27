@@ -18,7 +18,7 @@ GitHub Actions を利用し、1日1回、サーバーレスで自動更新され
 [あなたの独自ドメインURL]/sitemap.xml
 
 ## 作者
-**Kimura Shigeru**
+**K-Tech Studio**
 - CRM Administrator / EC Operations Manager
 - note: https://note.com/ktech_devz
 - X: https://x.com/K_Tech_Dev
