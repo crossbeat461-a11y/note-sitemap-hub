@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # ここで Actions 自身に書き込み権限を明示的に与えます
+    # リポジトリへの書き込み権限を明示的に宣言
     permissions:
       contents: write
 
@@ -16,7 +16,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          # 書き込みのためにトークンを明示
+          # トークンを使用して権限を確保
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
@@ -36,11 +36,15 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          
+          # sitemap.xml をステージングに追加
           git add sitemap.xml
-          # 差分があるときだけコミット・プッシュする
+          
+          # 差分がある場合のみ処理を実行
           if ! git diff --cached --exit-code --quiet; then
             git commit -m "Update sitemap.xml [skip ci]"
-            git push origin main
+            # 現在のブランチ(main)へ確実にプッシュ
+            git push origin HEAD:${{ github.ref }}
           else
             echo "No changes to commit"
           fi
