@@ -5,7 +5,7 @@ import os
 import time
 
 # 設定
-RSS_URL = "https://note.com/ktech_devz/rss"
+RSS_URL = "https://note.com/ktech_dev/rss"
 SITEMAP_FILE = "sitemap.xml"
 
 def get_note_articles():
