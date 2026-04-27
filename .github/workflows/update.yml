@@ -15,7 +15,8 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          # ここで明示的に標準のトークンを使い切る設定にします
+          persist-credentials: true
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -32,10 +33,17 @@ jobs:
 
       - name: Commit and Push changes
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          # ユーザー情報をActions公式のものに固定
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          
           git add sitemap.xml
+          
+          # 差分があるときだけ処理
           if ! git diff --cached --exit-code --quiet; then
             git commit -m "Update sitemap.xml [skip ci]"
-            git push origin HEAD:${{ github.ref }}
+            # ブランチ名を自動取得してプッシュ
+            git push origin HEAD:${{ github.ref_name }}
+          else
+            echo "No changes to commit"
           fi
