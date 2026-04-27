@@ -2,8 +2,8 @@ name: Update Sitemap
 
 on:
   schedule:
-    - cron: '0 18 * * *'
-  workflow_dispatch:
+    - cron: '0 18 * * *'  # 毎日日本時間深夜3時に実行
+  workflow_dispatch:      # 手動実行ボタンを有効にする（重要！）
 
 jobs:
   build:
