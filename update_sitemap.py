@@ -10,7 +10,6 @@ SITEMAP_FILE = "sitemap.xml"
 def get_note_articles():
     try:
         response = requests.get(RSS_URL)
-        # noteのRSSは標準的なXML形式
         root = ET.fromstring(response.content)
         articles = []
         for item in root.findall(".//item"):
@@ -22,11 +21,10 @@ def get_note_articles():
         return []
 
 def update_sitemap(new_links):
-    # 既存のサイトマップがあれば読み込む（過去記事の蓄積のため）
     existing_links = set()
-    if os.path.exists(SITEMAP_FILE):
+    # ファイルが存在し、かつ中身が空でない場合のみ読み込む
+    if os.path.exists(SITEMAP_FILE) and os.path.getsize(SITEMAP_FILE) > 10:
         try:
-            # サイトマップの標準Namespaceに対応
             ns = {"ns": "http://www.sitemaps.org/schemas/sitemap/0.9"}
             tree = ET.parse(SITEMAP_FILE)
             root = tree.getroot()
@@ -35,13 +33,9 @@ def update_sitemap(new_links):
         except Exception as e:
             print(f"Error reading existing sitemap: {e}")
 
-    # 新旧のリンクを合体（重複は自動で排除される）
     all_links = existing_links.union(set(new_links))
 
-    # XML構造の再構築
     urlset = ET.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-    
-    # 常に最新の日付を付与（あるいは記事ごとの日付取得も可能ですが、まずは簡素に）
     today = datetime.now().strftime("%Y-%m-%d")
     
     for link in sorted(all_links):
@@ -51,7 +45,6 @@ def update_sitemap(new_links):
         lastmod = ET.SubElement(url, "lastmod")
         lastmod.text = today
 
-    # 書き出し
     tree = ET.ElementTree(urlset)
     ET.indent(tree, space="  ", level=0)
     tree.write(SITEMAP_FILE, encoding="utf-8", xml_declaration=True)
