@@ -2,18 +2,22 @@ name: Update Sitemap
 
 on:
   schedule:
-    - cron: '0 18 * * *'  # 毎日日本時間深夜3時に実行
-  workflow_dispatch:      # 手動実行ボタンを有効にする（重要！）
+    - cron: '0 18 * * *'
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    # ここで Actions 自身に書き込み権限を明示的に与えます
     permissions:
       contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          # 書き込みのためにトークンを明示
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -30,8 +34,13 @@ jobs:
 
       - name: Commit and Push changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add sitemap.xml
-          git diff --quiet && git diff --staged --quiet || git commit -m "Update sitemap.xml [skip ci]"
-          git push
+          # 差分があるときだけコミット・プッシュする
+          if ! git diff --cached --exit-code --quiet; then
+            git commit -m "Update sitemap.xml [skip ci]"
+            git push origin main
+          else
+            echo "No changes to commit"
+          fi
