@@ -66,3 +66,14 @@ def update_sitemap(new_links):
 if __name__ == "__main__":
     links = get_note_articles()
     update_sitemap(links)
+    
+    # 【追加：noteサイトマップ用の一括出力機能】
+    # これによりGitHub Actionsのログをコピーするだけでnoteが完成します
+    if links:
+        print("\n" + "="*50)
+        print(" 【重要】noteサイトマップ貼り付け用URLリスト")
+        print("="*50)
+        # 新しい記事を上にするために逆順（reverse）で出力
+        for link in reversed(links):
+            print(link)
+        print("="*50)
