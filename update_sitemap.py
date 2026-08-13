@@ -16,8 +16,8 @@ TZ = ZoneInfo("Asia/Tokyo")
 UA = "K-Tech-Studio-NoteIndex/1.0 (+https://k-tech-lab.vercel.app/)"
 NOTE_HOME = f"https://note.com/{CREATOR}"
 HOMEPAGE = "https://k-tech-lab.vercel.app/"
-OG_IMAGE = "https://k-tech-lab.vercel.app/images/ogp-main.jpg"
 PAGE_URL = "https://crossbeat461-a11y.github.io/note-sitemap-hub/"
+OG_IMAGE = f"{PAGE_URL}ogp.jpg"
 SITEMAP_FILE = Path("sitemap.xml")
 INDEX_FILE = Path("index.html")
 
@@ -97,7 +97,7 @@ def write_index(rows: list[dict], generated: str) -> None:
         )
     body = "\n".join(items) if items else "      <li>記事を取得できませんでした。</li>"
     page = f"""<!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" prefix="og: http://ogp.me/ns#">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -107,11 +107,20 @@ def write_index(rows: list[dict], generated: str) -> None:
   <meta property="og:description" content="note @ktech_dev の公開記事一覧。毎日自動更新。">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{PAGE_URL}">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="K-Tech Studio">
   <meta property="og:image" content="{OG_IMAGE}">
-  <meta property="og:image:width" content="800">
-  <meta property="og:image:height" content="419">
+  <meta property="og:image:secure_url" content="{OG_IMAGE}">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="K-Tech Studio">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="K-Tech Studio — note 全記事一覧">
+  <meta name="twitter:description" content="note @ktech_dev の公開記事一覧。毎日自動更新。">
   <meta name="twitter:image" content="{OG_IMAGE}">
+  <meta name="note:card" content="summary_large_image">
+  <link rel="image_src" href="{OG_IMAGE}">
   <style>
     :root {{ color-scheme: light dark; }}
     body {{
