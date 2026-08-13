@@ -1,1 +1,1 @@
-requests
+# GitHub Actions は標準ライブラリのみ使う

@@ -2,7 +2,7 @@ name: Update Sitemap
 
 on:
   schedule:
-    - cron: '0 18 * * *'
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 jobs:
@@ -14,36 +14,23 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          # 履歴をすべて取得して不整合を防ぐ
-          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Run update script
+      - name: Generate index and sitemap
         run: python update_sitemap.py
 
-      - name: Commit and Push changes
+      - name: Commit and push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          
-          # ファイルを強制的にステージング
-          git add sitemap.xml
-          
-          # 差分があるときだけ処理
-          if ! git diff --cached --exit-code --quiet; then
-            git commit -m "Update sitemap.xml [skip ci]"
-            # --force を使い、権限がある限り無理やりねじ込む
-            git push origin HEAD:${{ github.ref }} --force
-          else
+          git add index.html sitemap.xml
+          if git diff --cached --quiet; then
             echo "No changes to commit"
+          else
+            git commit -m "Update note article index [skip ci]"
+            git push
           fi

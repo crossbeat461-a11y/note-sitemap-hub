@@ -1,57 +1,21 @@
 # note-sitemap-hub
 
-<details>
-<summary>🇯🇵 日本語 (Japanese)</summary>
+[note @ktech_dev](https://note.com/ktech_dev) の公開記事一覧を、毎日自動で更新する。
 
-note（@ktech_devz）の更新を自動検知し、独自ドメイン上で `sitemap.xml` を生成・蓄積するオートメーション・ハブです。
+人が読むページ: https://crossbeat461-a11y.github.io/note-sitemap-hub/  
+検索エンジン用: https://crossbeat461-a11y.github.io/note-sitemap-hub/sitemap.xml
 
-## 概要
-noteの標準RSSフィードの制限（最大50件）を補完し、過去記事を含む全インデックスをGoogle Search Console等へ提供することを目的としています。
-GitHub Actions を利用し、1日1回、サーバーレスで自動更新されます。
+## 何をしているか
 
-## システム構成
-- **Runtime:** Python 3.x
-- **Automation:** GitHub Actions (Scheduled workflow)
-- **Data Source:** note RSS Feed
-- **Output:** `sitemap.xml`
+note の公開 API から全記事を取り、`index.html` と `sitemap.xml` を書き換える。GitHub Actions が毎日 1 回（UTC 18:00）動く。
 
-## 運用ポリシー
-本プロジェクトは「本質主義」に基づき、過度な装飾を排し、データの整合性と自動化の継続性を重視して運用しています。
-生成されたサイトマップは、以下の独自ドメイン配下で公開されています。
-[あなたの独自ドメインURL]/sitemap.xml
+note の [サイトマップ（目録）](https://note.com/ktech_dev/n/n4eb9d70dc172) には、この一覧ページへのリンクだけ置く。記事 URL を note に貼らない。
+
+## 手動で今すぐ更新する
+
+GitHub の Actions → **Update Sitemap** → **Run workflow**
 
 ## 作者
-**K-Tech Studio**
-- CRM Administrator / EC Operations Manager
-- note: https://note.com/ktech_devz
-- X: https://x.com/K_Tech_Dev
 
-</details>
-
-<details>
-<summary>🇺🇸 English</summary>
-
-An automation hub that automatically detects updates from note (@ktech_devz) and generates/stores `sitemap.xml` on a custom domain.
-
-## Overview
-The goal is to supplement the limitations of note's standard RSS feed (maximum 50 items) and provide a full index, including past articles, to Google Search Console and other tools.
-It is automatically updated once a day using GitHub Actions in a serverless environment.
-
-## System Configuration
-- **Runtime:** Python 3.x
-- **Automation:** GitHub Actions (Scheduled workflow)
-- **Data Source:** note RSS Feed
-- **Output:** `sitemap.xml`
-
-## Operating Policy
-Based on the philosophy of "Essentialism," this project prioritizes data integrity and automation continuity while avoiding excessive decoration.
-The generated sitemap is published under the following custom domain:
-[Your Custom Domain URL]/sitemap.xml
-
-## Author
-**K-Tech Studio**
-- CRM Administrator / EC Operations Manager
-- note: https://note.com/ktech_devz
-- X: https://x.com/K_Tech_Dev
-
-</details>
+K-Tech Studio / 開発担当  
+https://note.com/ktech_dev · https://x.com/K_Tech_Dev
