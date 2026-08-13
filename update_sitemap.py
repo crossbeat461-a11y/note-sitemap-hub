@@ -16,6 +16,8 @@ TZ = ZoneInfo("Asia/Tokyo")
 UA = "K-Tech-Studio-NoteIndex/1.0 (+https://k-tech-lab.vercel.app/)"
 NOTE_HOME = f"https://note.com/{CREATOR}"
 HOMEPAGE = "https://k-tech-lab.vercel.app/"
+OG_IMAGE = "https://k-tech-lab.vercel.app/images/ogp-main.jpg"
+PAGE_URL = "https://crossbeat461-a11y.github.io/note-sitemap-hub/"
 SITEMAP_FILE = Path("sitemap.xml")
 INDEX_FILE = Path("index.html")
 
@@ -101,6 +103,15 @@ def write_index(rows: list[dict], generated: str) -> None:
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>K-Tech Studio — note 全記事一覧</title>
   <meta name="description" content="note @ktech_dev の公開記事一覧。毎日自動更新。">
+  <meta property="og:title" content="K-Tech Studio — note 全記事一覧">
+  <meta property="og:description" content="note @ktech_dev の公開記事一覧。毎日自動更新。">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{PAGE_URL}">
+  <meta property="og:image" content="{OG_IMAGE}">
+  <meta property="og:image:width" content="800">
+  <meta property="og:image:height" content="419">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{OG_IMAGE}">
   <style>
     :root {{ color-scheme: light dark; }}
     body {{
