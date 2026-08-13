@@ -1,0 +1,376 @@
+{
+  "generated": "2026-08-14 08:28 JST",
+  "count": 74,
+  "notes": [
+    {
+      "title": "ちょっと足したら、13インチで見にくくなった。PowerGuardをv1.0.5まで直した話",
+      "url": "https://note.com/ktech_dev/n/n374de6171e5f",
+      "date": "2026-08-13"
+    },
+    {
+      "title": "インストール後のPowerGuard。しきい値・テーマ・通知が来ないときの見方",
+      "url": "https://note.com/ktech_dev/n/ndf8c5b6ff66f",
+      "date": "2026-08-10"
+    },
+    {
+      "title": "自分用のオープンソースアプリPowerGuardを無料公開します。充電をよりスムーズにバッテリー管理ができる。",
+      "url": "https://note.com/ktech_dev/n/n8d838087d639",
+      "date": "2026-08-09"
+    },
+    {
+      "title": "MacBook Neoを愛機にする。性能は足りる。触れる回数を増やす設定と、持ち出しにはモバイルバッテリーで事足りる",
+      "url": "https://note.com/ktech_dev/n/n9b064abe2ccf",
+      "date": "2026-08-08"
+    },
+    {
+      "title": "「エラーが出ました。直して」が空回りする理由。渡すのはいつ起きるか・直前にやったこと・画面の文字",
+      "url": "https://note.com/ktech_dev/n/n1f07819636c1",
+      "date": "2026-08-07"
+    },
+    {
+      "title": "「議事録にして」がズレる理由。AIに渡すのは決定・宿題・未決だけ",
+      "url": "https://note.com/ktech_dev/n/nba6d02457f7c",
+      "date": "2026-08-06"
+    },
+    {
+      "title": "「動くようにして」が怖い理由。渡すのは成功の見え方・触ってよい範囲・壊したら戻す",
+      "url": "https://note.com/ktech_dev/n/n432528ce2e89",
+      "date": "2026-08-05"
+    },
+    {
+      "title": "「今日の進捗、うまくまとめて」がズレる理由。AIに渡すのは結論・事実・未決だけ",
+      "url": "https://note.com/ktech_dev/n/n45f72095c7df",
+      "date": "2026-08-04"
+    },
+    {
+      "title": "CursorやCodexで「ちょっと直して」が通らない理由。渡すのはやりたいこと・触ってよい範囲・触るな",
+      "url": "https://note.com/ktech_dev/n/n8dd7a1912857",
+      "date": "2026-08-03"
+    },
+    {
+      "title": "「いい感じに返信して」がズレる理由。AIに渡すのは相手・事実・言わないこと",
+      "url": "https://note.com/ktech_dev/n/n955156305e15",
+      "date": "2026-08-02"
+    },
+    {
+      "title": "Excelの表をAIに渡す前の3チェック。欠けた列・単位・推測を止める",
+      "url": "https://note.com/ktech_dev/n/nd01dd80e6dac",
+      "date": "2026-08-02"
+    },
+    {
+      "title": "「いい感じにまとめて」が失敗する理由。AIに渡すのは結論・条件・例外だけ",
+      "url": "https://note.com/ktech_dev/n/nd912a64fc770",
+      "date": "2026-08-01"
+    },
+    {
+      "title": "道具を買わなくても速くなる。情報の置き場を決める3つの質問",
+      "url": "https://note.com/ktech_dev/n/n687c40febd76",
+      "date": "2026-08-01"
+    },
+    {
+      "title": "毎回同じ一杯になるか。コーヒー道具を選ぶ3つの質問",
+      "url": "https://note.com/ktech_dev/n/n169388cd2a64",
+      "date": "2026-07-31"
+    },
+    {
+      "title": "Amazonの売れ筋を買わない。写真映えしない道具だけを買う3つの基準",
+      "url": "https://note.com/ktech_dev/n/n9ebf2429653a",
+      "date": "2026-07-30"
+    },
+    {
+      "title": "2026年版・MacBook Neoおすすめ周辺機器｜買うべきもの・避けたいアクセサリ",
+      "url": "https://note.com/ktech_dev/n/nf46971bfb494",
+      "date": "2026-07-29"
+    },
+    {
+      "title": "タブ20枚のデスクが遅い理由。司令塔はキーボードでもモニターでもない。",
+      "url": "https://note.com/ktech_dev/n/n04feb0e2af2c",
+      "date": "2026-07-28"
+    },
+    {
+      "title": "SSD高騰時代、MacBook Neoは「足りる買い方」なのか",
+      "url": "https://note.com/ktech_dev/n/nfec6dd624e64",
+      "date": "2026-07-27"
+    },
+    {
+      "title": "Webの表をObsidianにも一発貼り付け｜Chrome拡張「TableSnap Pro」v2.0がMarkdown出力に対応しました",
+      "url": "https://note.com/ktech_dev/n/n969b2f51ffe4",
+      "date": "2026-07-21"
+    },
+    {
+      "title": "【第5回】Artisan接続編：グラフが出るまでの決定版（完結編）",
+      "url": "https://note.com/ktech_dev/n/n88af9b00d8a9",
+      "date": "2026-07-20"
+    },
+    {
+      "title": "【第4回】完全コピペ編：貼るだけで動く Arduino コード（庫内＋排気対応）",
+      "url": "https://note.com/ktech_dev/n/n2db6b5000ec8",
+      "date": "2026-07-19"
+    },
+    {
+      "title": "指先が覚えている微かな重さを、一行のコードで消すことにした",
+      "url": "https://note.com/ktech_dev/n/n0f9e2515fd37",
+      "date": "2026-05-13"
+    },
+    {
+      "title": "【第3回】準備編：PCとArduinoを「相思相愛」にする。Mac/Win環境構築ガイド",
+      "url": "https://note.com/ktech_dev/n/nae2e049f5a80",
+      "date": "2026-05-10"
+    },
+    {
+      "title": "珈琲の「設計図」を崩さない。京セラ・セラミックタンブラーが導き出す論理的な旨さ",
+      "url": "https://note.com/ktech_dev/n/nb1562ee7410a",
+      "date": "2026-05-09"
+    },
+    {
+      "title": "「一九五九年の吐息を、手のひらに：Spotifyハイレゾ化で目覚める、ジャズの真実」",
+      "url": "https://note.com/ktech_dev/n/n224039a2c1c3",
+      "date": "2026-05-07"
+    },
+    {
+      "title": "MacBook Neoを「究極のAIコックピット」へ。ハードウェアとブラウザが溶け合う、OrbitTab v1.5.3の衝撃。",
+      "url": "https://note.com/ktech_dev/n/n330e12ec922a",
+      "date": "2026-05-01"
+    },
+    {
+      "title": "【祝・公開】ブラウザを「ただの窓」で終わらせない。二種の神器「OrbitTab」×「TableSnap Pro」が起こす、仕事の革命。",
+      "url": "https://note.com/ktech_dev/n/n09b80386721c",
+      "date": "2026-04-29"
+    },
+    {
+      "title": "K-Tech Studio / Repositories #004：DBレスの心臓：news.txt に「命」を吹き込むパース・ロジック。",
+      "url": "https://note.com/ktech_dev/n/na36208920ab6",
+      "date": "2026-04-28"
+    },
+    {
+      "title": "サイトマップ（目録）：K-Tech Studio の思考プロトコル",
+      "url": "https://note.com/ktech_dev/n/n4eb9d70dc172",
+      "date": "2026-04-28"
+    },
+    {
+      "title": "K-Tech Studio:全記事一覧 - List of All Articles -",
+      "url": "https://note.com/ktech_dev/n/na4740e5e88a3",
+      "date": "2026-04-28"
+    },
+    {
+      "title": "【第2回】準備編：ノートPCが「プロの管制塔」に変わる。必要なパーツ全リスト",
+      "url": "https://note.com/ktech_dev/n/nef28c5b9cced",
+      "date": "2026-04-27"
+    },
+    {
+      "title": "【第1回】数万円の温度計は不要？直火式コーヒー焙煎機をArduinoで「プロ仕様」に改造するまでの物語",
+      "url": "https://note.com/ktech_dev/n/n8758d6fa7cda",
+      "date": "2026-04-26"
+    },
+    {
+      "title": "ブラウザの中に「自分専用の管制塔」を。OrbitTabのAI連携がもたらす破壊的ワークフロー",
+      "url": "https://note.com/ktech_dev/n/n2e2e78094e91",
+      "date": "2026-04-23"
+    },
+    {
+      "title": "【Profile &amp; Links】システム統括者が追求する、効率化とプロダクト開発の結び目",
+      "url": "https://note.com/ktech_dev/n/n9b696a0918cf",
+      "date": "2026-04-22"
+    },
+    {
+      "title": "【OrbitTab取説 #2】理想のコクピットをデザインせよ。自分専用の「黄金レイアウト」構築術",
+      "url": "https://note.com/ktech_dev/n/n34184b8fcb4a",
+      "date": "2026-04-22"
+    },
+    {
+      "title": "【OrbitTab取説 #1】ブラウザの「新しいタブ」を自分専用のコクピットに変える方法",
+      "url": "https://note.com/ktech_dev/n/n3ebe4d6913bd",
+      "date": "2026-04-21"
+    },
+    {
+      "title": "【実録】Google審査落ちから「公開済み」へ。Chrome拡張機能『OrbitTab』1.2.0への大逆転劇",
+      "url": "https://note.com/ktech_dev/n/nee4b43ba5df3",
+      "date": "2026-04-20"
+    },
+    {
+      "title": "Google審査落ちと再申請！個人開発の「デジタル管制塔」OrbitTabが1.2.0で進化した全記録",
+      "url": "https://note.com/ktech_dev/n/n0ce5d2c67be2",
+      "date": "2026-04-19"
+    },
+    {
+      "title": "アップデート情報：【TableSnap Pro v1.4.14】完璧なデータを一瞬で。究極のウェブテーブル抽出ガイド",
+      "url": "https://note.com/ktech_dev/n/n9fdab6b0d4d7",
+      "date": "2026-04-15"
+    },
+    {
+      "title": "K-Tech Studio / Repositories #003：DOMの深淵　&lt;div&gt;の城を捨て、論理の石を積む。",
+      "url": "https://note.com/ktech_dev/n/n110b2abccf43",
+      "date": "2026-04-13"
+    },
+    {
+      "title": "K-Tech Studio / Repositories #002：理想を捨てて、あえて「DBレスPHP」を選んだ理由。",
+      "url": "https://note.com/ktech_dev/n/nac0e2d9503cb",
+      "date": "2026-04-12"
+    },
+    {
+      "title": "熱狂をコンパイルせよ ── 『新宝島』という名の、最も美しく冷徹なコーディング規約（プロトコル）",
+      "url": "https://note.com/ktech_dev/n/n17376135b045",
+      "date": "2026-04-11"
+    },
+    {
+      "title": "第5回：【実践】デモページで体験！AI分析を完璧にする完全ガイド〜LP公開とデモサイトで学ぶ、TableSnap Pro の真価〜",
+      "url": "https://note.com/ktech_dev/n/nb3324e7c8099",
+      "date": "2026-04-11"
+    },
+    {
+      "title": "第4回：【図解】3ステップで完了！TableSnap Pro 操作ガイド〜迷わない、止まらない。AI への最短ルート〜",
+      "url": "https://note.com/ktech_dev/n/ne7c082c55b65",
+      "date": "2026-04-10"
+    },
+    {
+      "title": "第3回：AIが喜ぶ！4つの抽出モード徹底活用術〜「崩れたコピペ」を卒業し、AI を賢く使いこなす〜",
+      "url": "https://note.com/ktech_dev/n/n02cf2d1fd1ae",
+      "date": "2026-04-09"
+    },
+    {
+      "title": "深度に沈む、透明な熱狂――サカナクションという「共振」の設計図",
+      "url": "https://note.com/ktech_dev/n/nf1f7ab733c59",
+      "date": "2026-04-08"
+    },
+    {
+      "title": "K-Tech Studio / Repositories #001：「会社を表現する」という重圧。ポートレートサイト構築における技術選定のブリッジ",
+      "url": "https://note.com/ktech_dev/n/nbc41b0a30eae",
+      "date": "2026-04-07"
+    },
+    {
+      "title": "濾過された深夜の解体作業 ── 『怪獣』とデバッグの冷たい火：第２作",
+      "url": "https://note.com/ktech_dev/n/nbbafee671be2",
+      "date": "2026-04-07"
+    },
+    {
+      "title": "4:6メソッドという「アルゴリズム」を、専用ハードウェアで実行する。HARIO『ポラリス』導入記",
+      "url": "https://note.com/ktech_dev/n/n6c29b96385ad",
+      "date": "2026-04-06"
+    },
+    {
+      "title": "第2回：【導入編】世界基準の「表抽出」を、あなたのブラウザに。〜言語の壁を越え、AI 時代のデータ収集を加速させる〜",
+      "url": "https://note.com/ktech_dev/n/na6f1f64fa692",
+      "date": "2026-04-06"
+    },
+    {
+      "title": "Season 2 第5回：沈黙の対話と、未完の「最終検品」",
+      "url": "https://note.com/ktech_dev/n/n6ea211ab8927",
+      "date": "2026-04-05"
+    },
+    {
+      "title": "TableSnap Pro プライバシーポリシー",
+      "url": "https://note.com/ktech_dev/n/ne4f6ab8b1668",
+      "date": "2026-04-04"
+    },
+    {
+      "title": "第1回：AIに『正確な分析』をさせるための、たった一つの準備",
+      "url": "https://note.com/ktech_dev/n/nf662f5a6c9e3",
+      "date": "2026-04-04"
+    },
+    {
+      "title": "魚民マガジン第６回：漂流する宝島、あるいは制御不能な情報のダンス：『新宝島』という美しい誤算について",
+      "url": "https://note.com/ktech_dev/n/ned0eb742edba",
+      "date": "2026-04-04"
+    },
+    {
+      "title": "ブラウザの「真っ白な虚無」にサヨナラを。新拡張機能『OrbitTab』を審査に出しました！",
+      "url": "https://note.com/ktech_dev/n/na541e1de29f5",
+      "date": "2026-04-02"
+    },
+    {
+      "title": "OrbitTab プライバシーポリシー",
+      "url": "https://note.com/ktech_dev/n/nbeb9d329f133",
+      "date": "2026-04-02"
+    },
+    {
+      "title": "「ネットの作成サイト、いつまで使い続ける？」流通現場のセキュリティ危機を、エクセルVBAが救った実話。",
+      "url": "https://note.com/ktech_dev/n/nc4bbbc14769d",
+      "date": "2026-04-01"
+    },
+    {
+      "title": "僕らが深夜にコードを書くのは、怪獣だからだ──エンジニア視点の『怪獣』論」：第３作",
+      "url": "https://note.com/ktech_dev/n/n543181493d42",
+      "date": "2026-04-01"
+    },
+    {
+      "title": "Season 2 第4回：セルの中の「洪水」を堰き止める――二重引用符の静かな防衛線",
+      "url": "https://note.com/ktech_dev/n/n653251f8073f",
+      "date": "2026-03-31"
+    },
+    {
+      "title": "【Excelだけで完結】JANバーコード一括作成・管理ツール v2.0（旧Excel形式 .xls 対応版）| JAN Barcode Generator (English Included)",
+      "url": "https://note.com/ktech_dev/n/nf2fc9e3e7bc0",
+      "date": "2026-03-30"
+    },
+    {
+      "title": "Season 2 第3回：深淵に潜む「夾雑物」――知の巨塔が仕掛けた、二重の抽出罠",
+      "url": "https://note.com/ktech_dev/n/n782c21c88c42",
+      "date": "2026-03-29"
+    },
+    {
+      "title": "Season 2 第2回：虚像を剥ぎ取り、真実を綴じる――ソートの迷宮と「不変」のアンカー",
+      "url": "https://note.com/ktech_dev/n/n5fe8d38be672",
+      "date": "2026-03-26"
+    },
+    {
+      "title": "Season 2 第1回：知の巨塔で喰らったカウンター――Wikipedia、あるいは整列の罠",
+      "url": "https://note.com/ktech_dev/n/n2a9b246a4386",
+      "date": "2026-03-24"
+    },
+    {
+      "title": "魚民マガジン第5回：アイデンティティ —— 再構築の夜",
+      "url": "https://note.com/ktech_dev/n/nbc7a96bd1505",
+      "date": "2026-03-23"
+    },
+    {
+      "title": "魚民マガジン第4回：怪獣の腕のなかで、ライムをデプロイする夜 ―― 韻律と論理の等価交換",
+      "url": "https://note.com/ktech_dev/n/neb773cede58d",
+      "date": "2026-03-22"
+    },
+    {
+      "title": "魚民マガジン 第2回：実行、実行、実行。――『Aoi』が加速させる、絶望のブルー",
+      "url": "https://note.com/ktech_dev/n/n615298aa9ed7",
+      "date": "2026-03-21"
+    },
+    {
+      "title": "魚民マガジン第3回：丁寧、丁寧、丁寧。——『新宝島』への遠すぎるステップ",
+      "url": "https://note.com/ktech_dev/n/necd12d56c852",
+      "date": "2026-03-21"
+    },
+    {
+      "title": "第5回：本末転倒の先にある聖域――なぜ私は「1ビット」に魂を売るのか",
+      "url": "https://note.com/ktech_dev/n/n96d827b63bd3",
+      "date": "2026-03-20"
+    },
+    {
+      "title": "魚民マガジン第1回：いらない、いらない、いらない。——楽曲『いらない』と共鳴するデバッグの夜",
+      "url": "https://note.com/ktech_dev/n/n758ee290b4e9",
+      "date": "2026-03-18"
+    },
+    {
+      "title": "第4回：抽出の流儀――整えたデータをどう『出力』するか",
+      "url": "https://note.com/ktech_dev/n/naac259d1cb67",
+      "date": "2026-03-18"
+    },
+    {
+      "title": "第3回：ハンドピックの美学――1ビットのノイズも許さない「選別」の儀式",
+      "url": "https://note.com/ktech_dev/n/n4400a2d25db6",
+      "date": "2026-03-16"
+    },
+    {
+      "title": "第2回：鼻が利くエンジニアだけが気付く『悪臭』――コードスメルと香りの密約",
+      "url": "https://note.com/ktech_dev/n/ne12a48c9c1ae",
+      "date": "2026-03-14"
+    },
+    {
+      "title": "第1回：その「パチッ」は警告か、進化の合図か。――1ハゼとデバッグの甘美な関係",
+      "url": "https://note.com/ktech_dev/n/n0cf7b6cbc6e7",
+      "date": "2026-03-13"
+    },
+    {
+      "title": "【初めまして】コーヒーの飲み過ぎで行き着いた、本末転倒な「データの沼」と「豆の鮮度」",
+      "url": "https://note.com/ktech_dev/n/n9c6216499c7d",
+      "date": "2026-03-13"
+    }
+  ]
+}

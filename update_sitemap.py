@@ -20,6 +20,7 @@ PAGE_URL = "https://crossbeat461-a11y.github.io/note-sitemap-hub/"
 OG_IMAGE = f"{PAGE_URL}ogp.jpg"
 SITEMAP_FILE = Path("sitemap.xml")
 INDEX_FILE = Path("index.html")
+NOTES_JSON_FILE = Path("notes.json")
 
 
 def http_json(url: str) -> dict:
@@ -157,6 +158,18 @@ def write_index(rows: list[dict], generated: str) -> None:
     INDEX_FILE.write_text(page, encoding="utf-8")
 
 
+def write_notes_json(rows: list[dict], generated: str) -> None:
+    payload = {
+        "generated": generated,
+        "count": len(rows),
+        "notes": [{"title": r["title"], "url": r["url"], "date": r["date"]} for r in rows],
+    }
+    NOTES_JSON_FILE.write_text(
+        json.dumps(payload, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
 def main() -> None:
     raw = fetch_all_notes()
     rows = normalize(raw)
@@ -166,7 +179,8 @@ def main() -> None:
         raise SystemExit("記事が0件のため、古い一覧を上書きしません。")
     write_sitemap(rows)
     write_index(rows, generated)
-    print(f"更新: {INDEX_FILE} / {SITEMAP_FILE}")
+    write_notes_json(rows, generated)
+    print(f"更新: {INDEX_FILE} / {SITEMAP_FILE} / {NOTES_JSON_FILE}")
 
 
 if __name__ == "__main__":

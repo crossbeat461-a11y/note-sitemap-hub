@@ -27,7 +27,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add index.html sitemap.xml
+          git add index.html sitemap.xml notes.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
