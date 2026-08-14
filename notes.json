@@ -1,7 +1,17 @@
 {
-  "generated": "2026-08-14 08:28 JST",
-  "count": 74,
+  "generated": "2026-08-15 03:55 JST",
+  "count": 76,
   "notes": [
+    {
+      "title": "アプリの更新のHub",
+      "url": "https://note.com/ktech_dev/n/n54fab14afae1",
+      "date": "2026-08-14"
+    },
+    {
+      "title": "NoteとGithubと怠けモノのわたし〜ズボラの先に詰まったお話〜",
+      "url": "https://note.com/ktech_dev/n/n3a42367d9b9c",
+      "date": "2026-08-14"
+    },
     {
       "title": "ちょっと足したら、13インチで見にくくなった。PowerGuardをv1.0.5まで直した話",
       "url": "https://note.com/ktech_dev/n/n374de6171e5f",
@@ -168,7 +178,7 @@
       "date": "2026-04-23"
     },
     {
-      "title": "【Profile &amp; Links】システム統括者が追求する、効率化とプロダクト開発の結び目",
+      "title": "【Profile & Links】システム統括者が追求する、効率化とプロダクト開発の結び目",
       "url": "https://note.com/ktech_dev/n/n9b696a0918cf",
       "date": "2026-04-22"
     },
@@ -198,7 +208,7 @@
       "date": "2026-04-15"
     },
     {
-      "title": "K-Tech Studio / Repositories #003：DOMの深淵　&lt;div&gt;の城を捨て、論理の石を積む。",
+      "title": "K-Tech Studio / Repositories #003：DOMの深淵　<div>の城を捨て、論理の石を積む。",
       "url": "https://note.com/ktech_dev/n/n110b2abccf43",
       "date": "2026-04-13"
     },
