@@ -1,7 +1,12 @@
 {
-  "generated": "2026-08-16 03:30 JST",
-  "count": 76,
+  "generated": "2026-08-17 03:29 JST",
+  "count": 77,
   "notes": [
+    {
+      "title": "ObsidianでCSVプラグインを入れたら、CSVプラグインが使えなくなる。複数デバイス間でも使えるための回避",
+      "url": "https://note.com/ktech_dev/n/nc92f7037e4a4",
+      "date": "2026-08-16"
+    },
     {
       "title": "アプリの更新のHub",
       "url": "https://note.com/ktech_dev/n/n54fab14afae1",
