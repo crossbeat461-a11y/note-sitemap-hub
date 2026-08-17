@@ -20,3 +20,7 @@ GitHub の Actions → **Update Sitemap** → **Run workflow**
 
 K-Tech Studio / 開発担当  
 https://note.com/ktech_dev · https://x.com/K_Tech_Dev
+
+## 支援
+
+[Buy Me a Coffee](https://buymeacoffee.com/k_tech_studio)
