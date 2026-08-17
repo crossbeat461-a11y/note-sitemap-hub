@@ -1,5 +1,7 @@
 # note-sitemap-hub
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/k_tech_studio)
+
 [note @ktech_dev](https://note.com/ktech_dev) の公開記事一覧を、毎日自動で更新する。
 
 人が読むページ（note に貼る URL）: https://k-tech-lab.vercel.app/notes/  
