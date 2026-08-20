@@ -1,7 +1,12 @@
 {
-  "generated": "2026-08-20 03:36 JST",
-  "count": 77,
+  "generated": "2026-08-21 03:39 JST",
+  "count": 78,
   "notes": [
+    {
+      "title": "断りメールがぶれる。先に書くのは答え・伝えてよい理由・その後どうするか",
+      "url": "https://note.com/ktech_dev/n/n148dd18842b4",
+      "date": "2026-08-20"
+    },
     {
       "title": "ObsidianでCSVプラグインを入れたら、CSVプラグインが使えなくなる。複数デバイス間でも使えるための回避",
       "url": "https://note.com/ktech_dev/n/nc92f7037e4a4",
