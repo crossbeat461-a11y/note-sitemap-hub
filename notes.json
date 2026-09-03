@@ -1,7 +1,12 @@
 {
-  "generated": "2026-09-03 05:39 JST",
-  "count": 82,
+  "generated": "2026-09-04 05:37 JST",
+  "count": 83,
   "notes": [
+    {
+      "title": "Obsidianに貼ると、Wordの太字が切れて、PDFは行で割れる。自分で選んでコピーした文を整える TidyPaste を公開します。",
+      "url": "https://note.com/ktech_dev/n/n45a6937f3a68",
+      "date": "2026-09-03"
+    },
     {
       "title": "机に座っても仕事が始まらない。最初に開く3つと、朝だけ通知を切る設定",
       "url": "https://note.com/ktech_dev/n/ne988b688aed2",
