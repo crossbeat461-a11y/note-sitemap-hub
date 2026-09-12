@@ -1,7 +1,12 @@
 {
-  "generated": "2026-09-12 05:36 JST",
-  "count": 84,
+  "generated": "2026-09-13 05:17 JST",
+  "count": 85,
   "notes": [
+    {
+      "title": "机の上でAppleが揃う。XcodeもNeoで回る。手元の3つは置く充電で足りる",
+      "url": "https://note.com/ktech_dev/n/n45b87eca9fbc",
+      "date": "2026-09-12"
+    },
     {
       "title": "CSVを開くたびにExcelを立ち上げていた。だから自分で作ってみました。｜Obsidianプラグイン TableCSV",
       "url": "https://note.com/ktech_dev/n/n801136dacf46",
