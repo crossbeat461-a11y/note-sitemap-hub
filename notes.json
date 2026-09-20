@@ -1,7 +1,12 @@
 {
-  "generated": "2026-09-20 05:10 JST",
-  "count": 85,
+  "generated": "2026-09-21 05:27 JST",
+  "count": 86,
   "notes": [
+    {
+      "title": "Obsidianプラグインのデータを絞り込んだあと、また探し直す挙動を見直すことにした。だから編集でも絞り込みを残してみた。というお話",
+      "url": "https://note.com/ktech_dev/n/n36330b9d7bff",
+      "date": "2026-09-20"
+    },
     {
       "title": "机の上でAppleが揃う。XcodeもNeoで回る。手元の3つは置く充電で足りる",
       "url": "https://note.com/ktech_dev/n/n45b87eca9fbc",
