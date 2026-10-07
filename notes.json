@@ -1,7 +1,12 @@
 {
-  "generated": "2026-10-07 07:26 JST",
-  "count": 87,
+  "generated": "2026-10-08 07:50 JST",
+  "count": 88,
   "notes": [
+    {
+      "title": "ObsidianのアップデートでVaultの外のMarkdownを開いたら、見出しへ飛べなかくなる。そしてマーカーの色も消える。だからアップデートした。",
+      "url": "https://note.com/ktech_dev/n/n291f8c6de8b3",
+      "date": "2026-10-07"
+    },
     {
       "title": "四ヶ月待ったあと、やっとホッとした。Thunderbirdの添付を一瞬で済ませる話",
       "url": "https://note.com/ktech_dev/n/n0699f4ab5b01",
