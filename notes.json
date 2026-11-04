@@ -1,7 +1,12 @@
 {
-  "generated": "2026-11-04 07:58 JST",
-  "count": 89,
+  "generated": "2026-11-05 08:18 JST",
+  "count": 90,
   "notes": [
+    {
+      "title": "PHP2shellと聞いて不安になった人へ。2026年10月のPHP修正を、エンジニア目線で整理する",
+      "url": "https://note.com/ktech_dev/n/n70266805731b",
+      "date": "2026-11-04"
+    },
     {
       "title": "大事なメールを、ThunderbirdからObsidianのノートとして残したくなった｜Mail Note Copy",
       "url": "https://note.com/ktech_dev/n/n70d02e3e7125",
