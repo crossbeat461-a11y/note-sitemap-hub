@@ -5,6 +5,10 @@ on:
     - cron: "0 18 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: update-sitemap
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -30,7 +34,19 @@ jobs:
           git add index.html sitemap.xml notes.json
           if git diff --cached --quiet; then
             echo "No changes to commit"
-          else
-            git commit -m "Update note article index [skip ci]"
-            git push
+            exit 0
           fi
+          git commit -m "Update note article index [skip ci]"
+          # GitHub が commit_refs で弾くことがある。少し待ってからやり直す。
+          i=1
+          while [ "$i" -le 5 ]; do
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            echo "push failed (attempt ${i}), retrying"
+            git pull --rebase origin main || true
+            i=$((i + 1))
+            sleep $((i * 10))
+          done
+          exit 1
+
